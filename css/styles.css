@@ -1,0 +1,307 @@
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    
+    display: flex;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.31rem 0.5%;
+    background-color: #13072e;
+}
+
+
+#logo {
+    max-width: 11.88rem;
+    max-height: 7.50rem;
+    width: auto;
+    height: auto;
+    padding: 0.94rem;
+    margin-left: 3rem;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0.94rem;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar a:hover {
+    color: #bded33;
+    transition: 0.3s all;
+}
+
+
+.navbar #contato-btn {
+    background-color: #bded33;
+    padding: 0.63rem;
+    border-radius: 1.25rem;
+    color: #13072e;
+    margin-right: 3.9rem;
+}
+
+.navbar #contato-btn:hover {
+    background-color: #5ce1e6;
+    color: #13072e;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0B2C35;
+    
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem; /* Define o tamanho base da fonte como 16px */
+}
+
+.first-content, .second-content {
+    background-color: #0B2C35;
+    padding: 10vh 5vw; /* Altura relativa ao viewport */
+    display: flex;
+    justify-content: left;
+}
+
+.second-content {
+    justify-content: right;
+}
+
+.content-wrapper {
+    max-width: 60rem; /* Tamanho máximo do conteúdo */
+    text-align: left;
+}
+
+.first-content h2, .second-content h2 {
+    color: #E7F521;
+    font-size: 2.5rem; /* Tamanho ajustável em rem */
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.first-content p, .second-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #D9D9D9;
+}
+
+.cta-btn {
+    background-color: #C2F732;
+    color: #0B082D;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background-color: #A0D22D;
+}
+
+.services, .services_information {
+    background-color: #0B2C35; 
+    padding: 4rem 2rem;
+    text-align: left;
+}
+
+.services h2 {
+    color: #E7F521;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-left: 7rem;
+    
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2.5rem;
+    margin-left: 7rem;
+    margin-right: 8rem;
+}
+
+.service-item {
+    
+    border-top: 0.25rem solid #5ce1e6;
+    border-top-right-radius: 3.5rem;
+    width: 45%; 
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+/*
+.service-item {
+    background-color: #0F0D2F;
+    
+    border:2px solid #00D6B3;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}   */ 
+
+.service-item p {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: #5ce1e6;
+    font-weight: bold;
+}
+
+.service-item-image {
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0.438rem solid #5ce1e6;
+    
+    
+}
+
+.service-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services_information {
+    background-color: #0B2C35; 
+    padding: 4rem 2rem;
+    text-align: left;
+    border-radius: 0.625rem;
+    margin: 0 10vw;
+}
+
+.services_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* pra alinhar verticalmente */
+    gap: 2rem;
+    margin-bottom: 3rem;
+    border-top: 0.25rem solid #5ce1e6;
+    border-top-right-radius: 0.625rem;
+    
+}
+
+.services_text {
+    flex: 1; /* o texto ocupa o resto do espaço */
+    min-width: 18.75rem; /* tamanho minimo do texto */
+}
+.services_text h4 {
+    margin-top: 1.5rem;
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #5ce1e6;
+    margin-bottom: 3rem;
+}
+
+.services_text p, .services_text ul {
+    font-size: 1.67vw;
+    color: #FFF;
+    
+}
+
+.services_img {
+    display: flex; 
+    justify-content: center; /* Centraliza a imagem */
+    align-items: center; 
+    max-width: 45%; /* Limite máximo para a largura */
+    max-height: 50%; /* Mantém a altura automática */
+    
+    
+}
+
+.services_img img {
+    max-width: 100%; /* A imagem não ultrapassa a largura do contêiner */
+    height: auto; /* A altura é automática para manter a proporção */
+    border-radius: 0.625rem; /* Mantém o raio da borda */
+    aspect-ratio: 16 / 9;
+}
+
+
+
+.service_info_below {
+    display: flex; /* Permite a disposição flexível dos elementos */
+    justify-content: space-between; /* Distribui os dois lados */
+    width: 100%;
+    
+}
+
+.service_info_below ul {
+    list-style-type: disc; /* Usa o marcador padrão (círculo preenchido) */
+    padding-left: 1.5rem; /* Espaçamento à esquerda para as listas */
+    margin: 0; /* Remove a margem padrão das listas */
+}
+
+.service_info_below li {
+    margin-bottom: 0.5rem; /* Espaçamento entre os itens da lista */
+    font-size: 1.67vw;
+    color: #FFF;
+}
+
+.left_info, .right_info {
+    flex: 1; /* Faz com que cada lado ocupe o mesmo espaço */
+    padding: 0 1rem; /* Espaçamento horizontal */
+    text-align: left;
+}
+
+
+.right_info {
+    margin-left: 8.5rem;
+}
+
+.service_info_below p {
+    font-size: 1.67vw;
+    color: #FFF;
+    
+    
+}
+
+
+
+.cta-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #FFF;
+    padding: 1.20rem 2rem;
+    border-radius: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 3rem;
+    
+}
+
+
+.cta-btn_2 {
+    display: inline-block;
+    background-color: #007bff;
+    color: #FFF;
+    padding: 1.20rem 2rem;
+    border-radius: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    
+    
+}
+
+.cta-btn:hover, .cta-btn_2:hover {
+    background-color: #0056b3;
+}
